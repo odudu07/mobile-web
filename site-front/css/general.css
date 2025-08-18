@@ -9,5 +9,28 @@ body {
 
 .container {
     background: #fff;
+    max-width: 1064px;
+    margin: 0 auto;
 }
 
+/* Criando o Header */
+header {
+    background: orangered;
+    /* Altura */
+    height: 130px;
+    border-bottom: 3px solid yellow;
+    /* Flexbox */
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+header h2 {
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 30px;
+}
