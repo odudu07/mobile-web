@@ -63,3 +63,15 @@ header h2 {
 .menu li a:hover {
     text-decoration: underline;
 }
+
+/* BANNER */
+.banner {
+    max-width: 1000px;
+    height: 250px;
+    border: 1px solid red;
+    border-radius: 10px;
+    margin: 20px;
+    /*cortar imagem*/
+    overflow: hidden;
+
+}
