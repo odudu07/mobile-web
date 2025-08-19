@@ -60,3 +60,6 @@ header h2 {
     text-align: center;
     padding: 18px;
 }
+.menu li a:hover {
+    text-decoration: underline;
+}
