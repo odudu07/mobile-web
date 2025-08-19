@@ -72,3 +72,14 @@ header h2 {
     /*Cortar imagem*/
     overflow: hidden;
 }
+
+/* Content HOME */
+.content-box {
+    margin: 20px;
+    border: 1px solid red;
+}
+
+.box {
+    border: 1px solid blue;
+    max-width: 300px;
+}
