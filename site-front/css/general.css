@@ -1,0 +1,36 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: rgba(255, 68, 0, 0.294);
+}
+
+.container {
+    background: #fff;
+    max-width: 1064px;
+    margin: 0 auto;
+}
+
+/* CRIANDO HEADER */
+header {
+    background: rgba(137, 43, 226, 0.344);
+    /* ALTURA */
+    height: 130px;
+    border-bottom: 3px solid orchid;
+    /* FLOXBOX */
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+header h2 {
+    color: blanchedalmond;
+    text-transform: uppercase;
+    font-size: 25px;
+}
