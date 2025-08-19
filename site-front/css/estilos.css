@@ -1,0 +1,32 @@
+body {
+    background: rgb(185, 182, 182);
+}
+
+h1 {
+    color: rgb(201, 14, 14);
+}
+
+h2 {
+    border: 2px solid rgb(232, 0, 0)
+    padding 15px;
+}
+
+H3 {
+    Border: 2px solid green
+    padding 15px;
+}
+
+img {
+    border-radius: 10px;
+    border: 1px solid #000;
+}
+
+a{
+    text-decoration: none;
+    font: size 24px;
+    color: brown;
+}
+
+a:hover {
+text-decoration: underline;
+}
