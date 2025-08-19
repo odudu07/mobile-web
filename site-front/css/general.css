@@ -1,10 +1,11 @@
 * {
     padding: 0;
     margin: 0;
+    list-style: none;
 }
 
 body {
-    background: rgba(255, 68, 0, 0.294);
+    background: rgba(227, 225, 225, 0.911);
 }
 
 .container {
@@ -15,10 +16,10 @@ body {
 
 /* CRIANDO HEADER */
 header {
-    background: rgba(137, 43, 226, 0.344);
+    background: rgba(255, 0, 0, 0.96);
     /* ALTURA */
     height: 130px;
-    border-bottom: 3px solid orchid;
+    border-bottom: 3px solid rgb(89, 244, 16);
     /* FLOXBOX */
     display: flex;
     align-items: center;
@@ -30,7 +31,32 @@ header img {
 }
 
 header h2 {
-    color: blanchedalmond;
+    color: rgb(255, 255, 255);
     text-transform: uppercase;
     font-size: 25px;
+}
+
+/* MENU DO SITE*/
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+     background-color: #dde5ea;
+}
+
+
+.menu li {
+    /* border: 1px solid red; */
+   
+    /*espaçamentos*/
+    padding: 18px;
+}
+
+.menu li a {
+    font-size: 23px;
+    text-decoration: none;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 18px;
 }
