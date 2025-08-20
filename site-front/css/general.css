@@ -2,6 +2,8 @@
     padding: 0;
     margin: 0;
     list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
 body {
@@ -56,7 +58,6 @@ header h2 {
     font-size: 23px;
     text-decoration: none;
     color: black;
-    font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     padding: 18px;
 }
@@ -79,10 +80,42 @@ header h2 {
 /* Content HOME */
 .content-box {
     margin: 20px;
-    border: 1px solid red;
+    /*flebox*/
+    display: flex;
+    
 }
 
 .box {
-    border: 1px solid blue;
+    border: 1px solid rgb(225, 9, 9);
     max-width: 300px;
+    border-radius: 10px;
+     /*cortar imagem*/
+    overflow: hidden;
+    margin: 10px 35px 20px 15px;
+    /*sombra*/
+    box-shadow: 2px 2px 3px rgb(187, 183, 183);
 }
+
+.box img {
+border-bottom: 1px solid rgb(255, 8, 0);
+}
+
+.box p {
+    padding: 10px;
+    color: black
+}
+
+.box a{ 
+    padding: 0 0 10px 10px;
+    display: block;
+    color: rgb(0, 8, 255);
+    text-decoration: none;
+    /*negrito*/
+    font-weight: bold;
+
+}
+
+.box a:hover {
+    text-decoration: underline;
+}
+
