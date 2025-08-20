@@ -15,6 +15,11 @@ body {
     margin: 0 auto;
 }
 
+.titleGeneral h1 {
+    padding-left: 25px;
+    color: orangered;
+}
+
 /* Criando o Header */
 header {
     background: orangered;
@@ -111,5 +116,22 @@ header h2 {
 
 .box a:hover {
     text-decoration: underline;
+}
+
+.promocao {
+   
+    /*flexbox*/
+    display: flex;
+    justify-content: center;
+}
+
+.promocao img {
+    max-width: 800px;
+    height: 180px;
+    border: 2px solid #4681d6;
+    border-radius: 10px;
+    margin: 20px;
+    /*Cortar imagem*/
+    overflow: hidden;
 }
 
