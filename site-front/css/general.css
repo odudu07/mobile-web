@@ -16,6 +16,11 @@ body {
     margin: 0 auto;
 }
 
+.titleGenera h1 {
+    padding-left: 25px;
+    color: orangered;
+}
+
 /* CRIANDO HEADER */
 header {
     background: rgba(255, 0, 0, 0.96);
@@ -117,5 +122,15 @@ border-bottom: 1px solid rgb(255, 8, 0);
 
 .box a:hover {
     text-decoration: underline;
+}
+
+.promocao img{
+    max-width: 800px;
+    height: 180px;
+    border: 2px solid red;
+    border-radius:20px;
+    margin: 20px;
+     /*cortar imagem*/
+    overflow: hidden;
 }
 
