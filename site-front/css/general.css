@@ -180,3 +180,16 @@ header h2 {
     font-weight: bold;
 }
 
+footer {
+    background: #000;
+    height: 40px;
+    /* Flexbox */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p {
+    color: #fff;
+}
+
