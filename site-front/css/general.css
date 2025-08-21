@@ -178,6 +178,17 @@ border-bottom: 1px solid rgb(255, 8, 0);
     font-weight: bold;
 }
 
+footer {
+    background: #000000;
+    height: 40px;
+    /* Flexbox */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
 
+footer p {
+    color: #ffffff;
+}
 
 
