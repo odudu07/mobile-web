@@ -208,6 +208,7 @@ footer p {
     border-radius: 5px;
     padding: 10px;
     margin: 10px;
+    cursor: pointer;
 }
 
 .containerLista article {
@@ -215,3 +216,16 @@ footer p {
     color: blue;
 }
 
+.sobreGeral h2 {
+     margin-bottom: 10px;
+     color:blue;
+}
+
+.listaValores {
+    list-style: none;
+}
+
+.sobregrau h2 {
+margin-bottom: 10px;
+color: blue;
+}
