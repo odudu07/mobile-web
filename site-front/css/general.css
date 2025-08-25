@@ -194,7 +194,7 @@ footer p {
 }
 
 /* Página Sobre*/
-.spaceSobre {
+.spaceSobre, .spaceContato {
     margin: 20px 0 20px 0;
 }
 
@@ -214,4 +214,15 @@ footer p {
 .containerLista article {
     margin-top: 8px;
     color: #4681d6;
+}
+
+/* Página contato */
+.text-contato {
+    margin: 0 0 20px 20px;
+    font-size: 42px;
+}
+
+.text-contato strong {
+    color: #4681d6;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
