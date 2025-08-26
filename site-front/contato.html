@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA DE CONTATOS</title>
+    <link rel="stylesheet" href="./css/general.css">
+</head>
+<body>
+    <main class="container">
+      <header>
+            <h1>
+                <img src="./img/logo.png" width="100" alt="logo">
+            </h1>
+            <h2>SENAI TURISMO</h2>
+        </header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="sobre.html">SOBRE</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+            </ul>
+        </nav>
+        <section class="titleGeneral">
+            <h1>🗣️ ATENDIMENTO::</h1>
+        </section>
+        <h2 class="text-contato">QUER <STRONg>ENTRAR EM CONTATO?</STRONg></h2>
+
+        <form>
+            <article class="form-gorup">
+                <label for="nome">NOME:</label>
+                <input type="text" id="nome" />
+            </article>
+        </form>
+
+        <form>
+            <article class="form-gorup">
+                <label for="email">E-MAIL:</label>
+                <input type="text" id="email" />
+            </article>
+        </form>
+
+        <form>
+            <article class="form-gorup-sexo">
+                <strong>SEXO:</strong>
+                <br>
+                <label for="masc">MASCULINO</label>
+                <input type="radio" name="sexo" id="masc" />
+                <br>
+                <label for="fem">FEMININO</label>
+                <input type="radio" name="sexo" id="fem" />
+                <br>
+                <label for="outros">OUTROS</label>
+                <input type="radio" name="sexo" id="outros" />
+            </article>
+
+            <article class="form-group">
+                <select>
+                    <option value=""> SELECIONE O ESTADO...</option>
+                    <option value="sp">SÃO PAULO</option>
+                    <option value="mg">MINAS GERAIS</option>
+                    <option value="rj">RIO DE JANEIRO</option>
+                    <option value="outros">OUTROS</option>
+                </select>
+            </article>
+
+            <article>
+                <fieldset>
+                    <legend>receber email</legend>
+                    <section class="form-grupo-info">
+                        <label for="sim"></label>
+                        <input type="checkbox" id="sim" />
+                    </section>
+                </fieldset>
+            </article>
+
+            <article class="form-gorup-info">
+                <label for="idade">idade:</label>
+                <input type="number" id="idade" min="0" max="10" class="form-control-padrao"/>
+            </article>
+            <article>
+                <label for="nivel">Nível de satisfação:</label>
+                <input type="range" id="nivel" min="0" max="10"/>
+            </article>
+        </form>
+
+        <footer>
+            <p> © SENAI TURISMO. TODOS OS DIREITOS RESERVADOS </p>
+        </footer>
+
+
+    </main>
