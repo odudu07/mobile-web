@@ -264,3 +264,25 @@ form {
     display: inline-block;
     margin-top: 10px;
 }
+
+legend {
+    padding: 10px;
+    display: inline-block;
+    font-size: 18px;
+}
+
+.form-group-info {
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.form-control-padrao {
+    width: 100%;
+    max-width: 50px;
+    height: 30px;
+    border: 2px solid #bcbaba;
+    outline: none;
+    padding-left: 5px;
+    border-radius: 7px;
+}
