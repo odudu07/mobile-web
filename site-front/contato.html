@@ -30,14 +30,14 @@
         <form>
             <article class="form-gorup">
                 <label for="nome">NOME:</label>
-                <input type="text" id="nome" />
+                <input type="text" id="nome" placeholder="Digite seu nome"/>
             </article>
         </form>
 
         <form>
             <article class="form-gorup">
                 <label for="email">E-MAIL:</label>
-                <input type="text" id="email" />
+                <input type="text" id="email" placeholder="Digite seu email"/>
             </article>
         </form>
 
@@ -69,19 +69,33 @@
                 <fieldset>
                     <legend>receber email</legend>
                     <section class="form-grupo-info">
-                        <label for="sim"></label>
+                        <label for="sim" class="title"></label>
                         <input type="checkbox" id="sim" />
                     </section>
                 </fieldset>
             </article>
 
             <article class="form-gorup-info">
-                <label for="idade">idade:</label>
+                <label for="idade" class="title">idade:</label>
                 <input type="number" id="idade" min="0" max="10" class="form-control-padrao"/>
             </article>
             <article>
-                <label for="nivel">Nível de satisfação:</label>
+                <label for="nivel" class="title">Nível de satisfação:</label>
                 <input type="range" id="nivel" min="0" max="10"/>
+            </article>
+
+            <article class="form-grupo-info">
+                <label for="doc" class="title">importar arquivo:</label> 
+                <input type="file" id="doc"/>            
+            </article>
+
+            <article class="form-gorup-info">
+                <label for="descricao" class="title">descrição:</label>
+                <textarea id="descricao" class="comentario"></textarea>
+            </article>
+
+            <article>
+                <button type="submit" class="btn-enviar">Enviar informações</button>
             </article>
         </form>
 

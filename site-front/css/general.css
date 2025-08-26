@@ -301,3 +301,31 @@ form {
     padding-left: 5px;
     border-radius: 7px;
 }
+
+.comentario {
+    width: 100%;
+    max-width: 300px;
+    height: 150px;
+    border: 1px solid #bcbaba;
+    outline: none;
+    padding-left: 5px;
+    border-radius: 7px;
+    display: block;
+    margin-top: 10px;
+    padding-top: 5px;
+}
+
+.title {
+    color: blue;
+    font-weight: bold;
+}
+
+.btn-enviar {
+    background: blue;
+    margin-bottom: 20px;
+    padding: 10;
+    color: #fff;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+}
