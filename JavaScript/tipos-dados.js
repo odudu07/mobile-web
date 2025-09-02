@@ -2,7 +2,7 @@
 let nome = "Eduardo";
 
 // inteiro
-let idade = 34;
+let idade = 18;
 
 // boleanno
 let casado = true;
