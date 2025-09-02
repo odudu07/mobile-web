@@ -14,3 +14,4 @@ console.log(text.indexOf("as"));
 
 // Retorna a última posição na string
 console.log(text.lastIndexOf("as"));
+
