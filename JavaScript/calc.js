@@ -5,10 +5,16 @@ let num2 = 10;
 
 //operações
 let soma = num1 + num2;
-let subtracao = num1 - num2;
+let sub = num1 - num2;
+let mult = num1 * num2;
+let div = num1 / num2;
    
 //funções
 function somar() {
      console.log(soma);
 }
   
+
+function subitrair() {
+     console.log(sub);
+}
