@@ -1,0 +1,84 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+.inicio {
+  background: linear-gradient(135deg, #ff4d4d, #ff9999);
+  color: white;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.amor {
+  background: #ff1a1a;
+  color: white;
+  padding: 40px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.5);
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.3em;
+  line-height: 1.6;
+}
+
+.botao {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 1.2em;
+  color: white;
+  background: #e60000;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.botao:hover {
+  background: #cc0000;
+  transform: scale(1.1);
+}
+
+.coracoes {
+  margin: 30px 0;
+  font-size: 2em;
+}
+
+/* Estilo para fotos */
+.foto-container {
+  margin: 20px 0;
+}
+
+.foto {
+  max-width: 100%;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border: 4px solid white;
+}
+
+.foto {
+  width: 300px;         /* largura fixa */
+  max-width: 90%;       /* adapta em telas pequenas */
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  border: 4px solid white;
+  display: block;
+  margin: 0 auto;       /* centraliza */
+}
