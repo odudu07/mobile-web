@@ -6,6 +6,13 @@ const resultado = document.getElementById("resultado");
 // Função
 function soma(event) {
    event.preventDefault(); 
+   // Validação de formulário
+   if (num1.value == "" || num2.value == "") {
+      alert("Preencha o campo");
+      return false;
+   }
+
+
    resultado.innerHTML = Number(num1.value) + Number(num2.value);
    num1.value = "";
    num2.value = "";
