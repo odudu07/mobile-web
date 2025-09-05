@@ -5,6 +5,13 @@ const resultado = document.getElementById("resultado");
 
 // funçoes
 function soma(event) {
+    // validadação de formulario
+    if (num1.value === "" || num2.value === "") {
+        alert("Preencha os campos");
+        return false;
+    }
+
+
     event.preventDefault();
     resultado.innerHTML = Number (num1.value) + Number(num2.value);
     num1.value = "";
@@ -18,17 +25,4 @@ function sub(event) {
     num1.value = "";
     num2.value = ""
 }
-// funçoes
-function mult(event) {
-    event.preventDefault();
-    resultado.innerHTML = Number (num1.value) * Number(num2.value);
-    num1.value = "";
-    num2.value = ""
-}
-// funçoes
-function div(event) {
-    event.preventDefault(); 
-    resultado.innerHTML = Number (num1.value) / Number(num2.value);
-    num1.value = "";
-    num2.value = ""
-}
+
