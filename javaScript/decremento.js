@@ -16,4 +16,4 @@ console.log(valor);
 /* Divisão */
 valor /= 4;
 
-console.log(valor)
+console.log(valor);
