@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #483D8B;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    border: 2px solid white;
+    border-radius: 5px;
+    margin: 40px auto;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 5px;
+}
+
+.form-control label {
+    margin-top: 15px;
+    color: #fff;
+    display: block;
+}
+
+#verifica-idade {
+    background: #191970;
+    border: 1px solid white;
+    color: #fff;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+#verifica-idade:hover {
+    background-color: rgb(232, 229, 229);
+    color: #191970;
+}
