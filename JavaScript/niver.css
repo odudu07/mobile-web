@@ -1,0 +1,27 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo azul e centralização */
+body {
+  font-family: 'Comic Sans MS', cursive; /* letra cursiva */
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #00aaff; /* azul simples */
+  color: white;
+}
+
+/* Título */
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+/* Número de dias */
+#dia
