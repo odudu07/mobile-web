@@ -17,9 +17,9 @@ function resultadoIdadeClick(event) {
 
     // lógica - condição
     if (inputIdade.value >= 18) {
-        resultado.innerHTML = "ACESSO LIBERADO. BOA FESTA🎉 ✅";
+        resultado.innerHTML = "ACESSO LIBERADO ✅";
     } else {
-        resultado.innerHTML = "ACESSO NEGADO ❌";
+        resultado.innerHTML = "ACESSO NEGADO.❌";
     }
 
     inputIdade.value = "";
