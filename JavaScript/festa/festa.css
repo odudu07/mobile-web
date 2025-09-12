@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #cdd0ff;
+}
+
+.container {
+    width: 100%;
+    max-width: 450px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    margin: 40px auto;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-control input {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    outline: none;
+    padding: 5px;
+}
+
+.form-control label {
+    margin-top: 15px;
+    color: #000000;
+    display: block;
+}
+
+#verifica-idade {
+    background: #b9b9b9;
+    border: 1px solid rgb(5, 5, 5);
+    color: #000000;
+    padding: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 5px;
+}
+
+#verifica-idade:hover {
+    background-color: rgb(0, 0, 0);
+    color: #000000;
+}
+
+#result {
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+#message {
+    display: none;
+}
+
+#message span {
+    color: rgb(0, 0, 0);
+    padding-bottom: 10px;
+    display: block;
+}
