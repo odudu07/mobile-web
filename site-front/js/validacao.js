@@ -14,6 +14,13 @@ form.addEventListener("submit", function(event) {
         return false;
     }
 
+// validação simples: tem @ e.
+    if(!email.includes("@") || !email.includes(".")) {
+        alert("email inválido.");
+        return false;
+    }
+
+    alert("email cadastrado com sucesso!✅");
     
 //limpa o formulário
 form.reset();
