@@ -1,4 +1,4 @@
-import Contador from './Contador.jsx'
+import Contador from "./contador"
 
 function App() {
 
