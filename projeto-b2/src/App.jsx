@@ -1,10 +1,10 @@
+import Contador from "./componentes/Contador";
 
 function App() {
 
   return (
     <>
-      <h1>Olá Rodriguinho</h1>
-      <h2>Giovanni</h2>
+      <Contador />
     </>
   )
 }
