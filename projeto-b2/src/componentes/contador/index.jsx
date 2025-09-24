@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./contador.css";
+import "./contador.css"
 
 
 const Contador = () => {
@@ -22,8 +22,6 @@ return (
             <h2>Resultado</h2>
             <button onClick={aumentar} style={{marginRight: '10px'}}>Aumentar</button>
             <button onClick={diminuir}>Diminuir</button>
-
-           
         </section>
     </main>
 
