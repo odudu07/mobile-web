@@ -1,28 +1,28 @@
 body {
-    background: red;
+    background: rgb(255, 0, 0);
 }
 
 .container {
-    border: 1px solid blue;
+    border: 1px solid rgb(18, 1, 255);
     max-width: 500px;
     margin: 0 auto;
-    background: #fff; 
+    background: rgb(37, 239, 253);
     padding: 20px;
     text-align: center;
 }
 
-h1{
-    background: orange
-    color #fff
-}
-
-h2 {
-    color: rgb(3, 100, 68);
-}
-
-button{
-    background: pink;
+button {
+    background: rgb(255, 0, 43);
     padding: 5px;
     font-size: 25px;
     border-radius: 10px;
+}
+
+h1 {
+    background: rgb(233, 170, 222);
+    color: rgb(255, 0, 0);
+}
+
+h2 {
+    color: rgb(179, 255, 0);
 }
