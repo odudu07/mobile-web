@@ -14,6 +14,8 @@ export default function ImgCard(props) {
     <p>
       {props.texto}
     </p>
+
+    <a href={props.link} target="_black">link</a>
     </div>
   )
 }
