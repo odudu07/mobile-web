@@ -39,7 +39,7 @@ function App() {
       caption="Céu" 
       imagem={img3}
       texto="Céu azul"
-      link="https://www.irmaospiologo.com.br/"
+      link="https://www.irmaospiologo.com.br/npm"
       />  
 
       <Button text="clique aqui" onclick={handleClick} />       
