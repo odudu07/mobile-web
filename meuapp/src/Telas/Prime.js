@@ -1,4 +1,5 @@
 import { View, StyleSheet, Text } from "react-native";
+import ListaCursos from "../Components/ListaCursos";
 
 export default function Prime() {
   return (
@@ -9,8 +10,10 @@ export default function Prime() {
 
       <View style={estilos.cursosContent}>
         <Text style={estilos.textTitle}> - HTML Completo</Text>
-        <Text> - Informática Básica teste</Text>
+        <Text> - Informática Básica</Text>
       </View>
+      <ListaCursos />
+
     </>
   )
 }
