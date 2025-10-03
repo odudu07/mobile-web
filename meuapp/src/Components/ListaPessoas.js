@@ -1,4 +1,4 @@
-import { Text, View } from 'react-native'
+import { Text, View, StyleSheet } from 'react-native'
 
 export default function ListaPessoas() {
     const pessoas = [
@@ -25,7 +25,7 @@ export default function ListaPessoas() {
 
     ];
     return (
-        <View>
+        <View style={estilos.container}>
             <Text>Lista de Pessoas</Text>
 
             {pessoas.map((pessoa) => (
@@ -38,3 +38,16 @@ export default function ListaPessoas() {
         </View>     
     )
 }
+
+const estilos = StyleSheet.create({
+    container: {
+        marginTop: 40,
+        padding: 20,
+    },
+    titulo: {
+        fontSize: 22,
+        fontWeight: "bold",
+        marginBottom: 15,
+        textAlign: "center"
+    }
+})
