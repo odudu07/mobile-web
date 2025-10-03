@@ -1,6 +1,6 @@
 import { View, StyleSheet, Text} from "react-native"
 import ListarCursos from "../Components/ListarCursos";
-import ListaAlunos from "../Components/ListaAlunos";ListaAlunos
+import ListaAlunos from "../Components/ListaAlunos";
 
 export default function Prime() {
   return (
