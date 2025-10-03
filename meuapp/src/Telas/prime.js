@@ -29,18 +29,20 @@ const estilos = StyleSheet.create({
   topo: {
     width: "100%",
     height: 150,
-    backgroundColor: "red",
+    backgroundColor: "blue",
   },
   tituloHeader: {
+    fontWeight: "bold",
     width: "100%",
     color: "white",
     textAlign: "center",
     paddingTop: 60,
     fontSize: 20
+    
   }, 
   curso: {
     width: "100%",
-    backgroundColor: "#353434ff"
+    backgroundColor: "#000000ff"
   },
   textTitulo: {
    color: "#ffffffff",

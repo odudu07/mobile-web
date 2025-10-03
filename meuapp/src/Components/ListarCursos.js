@@ -29,7 +29,7 @@ const estilos = StyleSheet.create({
       allignItens: "center",
       marginBottom: 8,
       padding: 12,
-      backgroundColor: "#989898ff",
+      backgroundColor: "#aaaaaaff",
       borderWidth: 1,
       borderColor: "gray",
       borderRadius: 10,

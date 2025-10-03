@@ -5,7 +5,7 @@ export default function ListaAlunos() {
     
     return (
         <View>
-            <Text>Lista de Alunos</Text>
+            <Text style={estilos.titulo}>Lista de Alunos</Text>
             <FlatList
                       data={alunos}
                       renderItem={({ item }) => (
@@ -26,15 +26,15 @@ const estilos = StyleSheet.create({
         padding: 20,
     },
     lastItem: {
-      flexDirection: "row",
+      flexDirection: "greenrow",
       allignItens: "center",
-      marginBottom: 8,
-      padding: 12,
+      marginBottom: 10,
+      padding: 5,
       backgroundColor: "#e7d7d3ff",
       borderWidth: 1,
-      borderColor: "gray",
-      borderRadius: 10,
-      elevation: 3,
+      borderColor: "blue",
+      borderRadius: 7,
+      elevation: 2,
     },
     bullet: {
       fontSize: 20,
@@ -42,6 +42,12 @@ const estilos = StyleSheet.create({
     }, 
     text: {
       fontSize: 16,
+    },
+    titulo: {
+        fontSize: 22,
+        fontWeight: "bold",
+        marginBottom: 15,
+        textAlign: "center"
     }
 })
 

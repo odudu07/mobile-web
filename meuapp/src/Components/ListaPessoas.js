@@ -26,10 +26,10 @@ export default function ListaPessoas() {
     ];
     return (
         <View style={estilos.container}>
-            <Text>Lista de Pessoas</Text>
+            <Text style={estilos.titulo}>Lista de Pessoas</Text>
 
             {pessoas.map((pessoa) => (
-                <View>
+                <View style={estilos.card}>
                     <Text>{pessoa.nome}</Text>
                     <Text>{pessoa.idade}</Text>
                 </View>
@@ -49,5 +49,13 @@ const estilos = StyleSheet.create({
         fontWeight: "bold",
         marginBottom: 15,
         textAlign: "center"
+    },
+    card: {
+        backgroundColor: "#ffffffff",
+        padding: 15,
+        borderRadius: 10,
+        borderColor: "blue",
+        borderWidth: 1,
+        marginBottom: 10
     }
 })
