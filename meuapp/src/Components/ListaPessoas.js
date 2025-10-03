@@ -24,11 +24,17 @@ export default function ListaPessoas() {
         }
 
     ];
-
-
     return (
         <View>
-            <Text>Teste</Text>
-        </View>
+            <Text>Lista de Pessoas</Text>
+
+            {pessoas.map((pessoa) => (
+                <View>
+                    <Text>{pessoa.nome}</Text>
+                    <Text>{pessoa.idade}</Text>
+                </View>
+            ))}
+
+        </View>     
     )
 }
