@@ -7,7 +7,7 @@ export default function App() {
     <>
       <ScrollView>
         <Prime/>
-        <ListaAlunos/>
+        
       </ScrollView>
     </>
 

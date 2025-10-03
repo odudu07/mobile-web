@@ -1,7 +1,7 @@
 import { Text, View, FlatList , StyleSheet } from "react-native";
 
 export default function ListaAlunos() {
-    const alunos = ["Neymar", "Messi", "Yamal", "Pelé", "Eduardo"];
+    const alunos = ["Davi", "Nicolas", "B2", "Rodrigo", "Eduardo"];
     
     return (
         <View>
