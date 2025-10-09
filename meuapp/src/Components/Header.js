@@ -15,13 +15,15 @@ const estilos = StyleSheet.create({
     topo: {
         width: "100%",
         height: 120,
-        backgroundColor: '#858585ff',
+        backgroundColor: '#d7d7de',
+        borderBottomColor: '#9c9ca1ff',
+        borderBottomWidth: 3,
     },
     tituloHeader: {
         widith: "100%",
          textAlign: 'center',
         height: 120,
-        color: '#ffffffff',
+        color: '#ff7b00ff',
         fontWeight: 'bold',
         fontSize: 25,
         paddingTop: 40,
