@@ -21,7 +21,7 @@ export default function ListaPessoas() {
         id: 15,
         nome: 'Gabs',
         idade: 58,
-    }
+    },
   ];
 
   return (
