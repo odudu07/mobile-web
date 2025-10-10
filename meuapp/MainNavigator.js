@@ -10,7 +10,7 @@ export default function MainNavigator() {
   return (
     <NavigationContainer>
         <Stack.Navigator initialRouteName="Home">   
-            <Stack.Screen name="Home" component={Home} />
+            <Stack.Screen name="Home" component={Home} options={{headerShown: false}} />
             <Stack.Screen name="Sobre" component={Sobre} />
         </Stack.Navigator>
     </NavigationContainer>
