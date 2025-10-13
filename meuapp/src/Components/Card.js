@@ -1,16 +1,15 @@
-import React from 'react'
+import React from 'react';
 import { Button, View, Text, StyleSheet } from 'react-native'
 
-export default function Card() {
+export default function Card(props) {
+
   return (
     <View style={estilos.container}>
-        <Text style={estilos.cardTitle}>Sobre</Text>
-        <Text style={estilos.cardContent}>Saiba mais sobre nós </Text>
-        <Button 
-            title="Ir para Sobre"
-            onPress={
-                () => alert("Botão Pressionado")
-            }
+        <Text style={estilos.cardTitle}>{props.title}</Text>
+        <Text style={estilos.cardContent}>{props.content} </Text>
+        <Button
+            title={props.textButton}
+            onPress={props.onPress}
         />
     </View>
   )
