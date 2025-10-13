@@ -1,26 +1,24 @@
 import React from 'react'
 import { useNavigation } from '@react-navigation/native';
-import {View, Button, Text, StyleSheet} from 'react-native'
+import { View, Button, Text, StyleSheet } from 'react-native'
 
-export default function Card(){
-
-const navigation = useNavigation();
-    return(
+export default function Card(props) {
+    const navigation = useNavigation();
+    return (
         <View style={estilos.container}>
-            <Text style={estilos.Cardtitle}>Sobre</Text>
-            <Text style={estilos.CardContent}>Saiba mais sobre nós</Text>
+            <Text style={estilos.Cardtitle}>{props.title}</Text>
+            <Text style={estilos.CardContent}>{props.content}</Text>
             <Button
-                title="Ir para sobre"
-                onPress={
-                    () => navigation.navigate('Sobre')
-                }
+                title={props.TextButton}
+                onPress={props.onPress}
+                
             />
         </View>
     )
 }
 
 const estilos = StyleSheet.create({
-    container:{
+    container: {
         backgroundColor: "#ffff",
         borderRadius: 1.41,
         shadowColor: 'blue',
@@ -29,13 +27,13 @@ const estilos = StyleSheet.create({
         padding: 20,
         margin: 20,
     },
-    Cardtitle:{
+    Cardtitle: {
         fontSize: 18,
         fontWeight: 'bold',
         marginBottom: 10,
 
     },
-    CardContent:{
+    CardContent: {
         fontSize: 14,
         marginBottom: 10,
 
