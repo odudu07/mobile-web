@@ -18,6 +18,8 @@ export default function Home() {
                 title="Faq"
                 content="Saiba mais Faq."
                 TextButton="Ir para Faq"
+                onPress={
+                    () => navigation.navigate('Faq')}
             />
         </View>
     )
