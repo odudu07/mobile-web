@@ -65,6 +65,7 @@ const estilos = StyleSheet.create({
         textAlign: 'left',
         width: '100%',
         lineHeight: 17,
+        fontWeight: 'bold',
     },
 
 }); 
