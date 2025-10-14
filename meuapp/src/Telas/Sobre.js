@@ -29,12 +29,19 @@ export default function Sobre() {
 
 const estilos = StyleSheet.create({
     container: {
+        flex: 1,
+        backgroundColor: '#f9f9f9',
         padding: 20,
+        alignItems: 'center',
     },
     image: {
+        width: '90%',
+        height: 200,
         borderRadius: 15,
-        borderColor: "orange",
-        borderWidth: 2,
+        borderColor: 'blue',
+        borderWidth: 3,
+        marginVertical: 10,
+
     },
     line: {
         width: '90%',
@@ -43,17 +50,21 @@ const estilos = StyleSheet.create({
         marginVertical: 10
     },
     titulo: {
-        fontSize: 23,
+        fontSize: 22,
         fontWeight: 'bold',
-        marginBottom: 10,
-        marginTop: 5,
-        textAlign: 'center',
-    },
-    corpo: {
-        fontSize: 15,
-        marginBottom: 2,
         color: '#000000ff',
-        marginLeft: 5,
-        letterSpacing: 0.5,
-    }
+        textAlign: 'center',
+        marginBottom: 8,
+        marginTop: 5,
+    },
+
+    corpo: {
+        fontSize: 16,
+        color: '#333',
+        marginBottom: 5,
+        textAlign: 'left',
+        width: '100%',
+        lineHeight: 17,
+    },
+
 }); 
