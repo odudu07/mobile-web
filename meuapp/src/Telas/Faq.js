@@ -14,7 +14,7 @@ export default function Faq() {
       </View>
 
       <View style={estilos.bloco}>
-          <Text style={estilos.pergunta}>Quais as opções de pagamento?  </Text>
+        <Text style={estilos.pergunta}>Quais as opções de pagamento?  </Text>
       </View>
 
       <View style={estilos.bloco}>
