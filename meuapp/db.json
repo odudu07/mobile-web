@@ -1,0 +1,28 @@
+{
+    "contatos": [
+        {
+            "id": 1,
+            "nome": "João Silva",
+            "telefone": "787878787"
+        },
+        {
+            "id": 2,
+            "nome": "Popeto",
+            "telefone": "66666666"
+        }
+    ],
+        "faq":  [
+            {
+                "id": 1,
+                "pergunta": "O que é JSON server?",  
+                "resposta": "JSON  server é uma ferramenta que permite..."
+            },
+            {
+                "id": 2,
+                "pergunta": "Onde fica Barcelona?",  
+                "resposta": "Espanha"
+
+            }
+    ]
+
+}
