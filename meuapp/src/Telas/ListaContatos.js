@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, TextComponent } from 'react-native'
 import axios from 'axios';
 
 export default function ListaContatos() {
@@ -14,8 +14,8 @@ export default function ListaContatos() {
             })
             .catch((error) => {
                 console.error("Erro ao buscar contatos", error);
-            });  
-            
+            });
+
     }
 
     // Use o useEffect para buscar dados
@@ -25,10 +25,18 @@ export default function ListaContatos() {
 
 
 
-    return (
-
-        <View>
-            <Text>Lista de Contatos</Text>
-        </View>
-    )
-}
+  return (
+    <View>
+        <Text>Lista de Contatos</Text>
+        {contatos.length > 0 ? (
+            contatos.map((contato, index) => (
+                <View key={index}>
+                    <Text>{contato.nome}</Text>
+                    <Text>{contato.telefone}</Text>
+                </View>
+            ))
+        ) : (
+            <Text>Nenhum contato disponível</Text>
+        )}
+    </View>
+)}

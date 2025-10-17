@@ -24,7 +24,7 @@ export default function Home() {
 
             <Card
                 title="Lista Contatos"
-                content="Lista de contatos cadastrados"
+                content="Lista de contatos cadastrados."
                 TextButton="Ir para Lista"
                 onPress={
                     () => navigation.navigate('ListaContatos')}
