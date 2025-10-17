@@ -25,6 +25,16 @@ export default function ListaContatos() {
   return (
     <View>
         <Text>Lista Contatos</Text>
+        {contatos.length > 0 ? (
+          contatos.map((contato, index) => (
+            <View key={index}>
+              <Text>{contato.nome}</Text>
+              <Text>{contato.telefone}</Text>
+            </View>
+          ))
+        ) : (
+          <Text>Nenhum contato disponível</Text>
+        )}
     </View>
   )
 }
