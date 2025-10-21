@@ -5,7 +5,7 @@ export default function Card(props) {
 
   return (
     <View style={estilos.container}>
-        <Text style={estilos.cardTitle}>{props.title}</Text>
+        <Text style={estilos.cardTitle}>{props.title} teste</Text>
         <Text style={estilos.cardContent}>{props.content} </Text>
         <Button
             title={props.textButton}
