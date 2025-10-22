@@ -1,31 +1,26 @@
 {
-    "contatos": [
-        {
-            "id": "1",
-            "nome": "João Silva",
-            "telefone": "787878787"
-        },
-        {
-            "id": "2",
-            "nome": "Popeto",
-            "telefone": "66666666"
-        },
-        {
-            "id": "3",
-            "nome": "Gabs",
-            "telefone": "8888888"
-        }
-    ],
-    "faq": [
-        {
-            "id": "1",
-            "pergunta": "O que é JSON Server?",
-            "resposta": "JSON server é uma ferramenta que permite...."
-        },
-        {
-            "id": "41",
-            "pergunta": "O que é Popeto?",
-            "resposta": "Popeto Popeto Popeto"
-        }
-    ]
+  "contatos": [
+    {
+      "id": "1",
+      "nome": "João Silva",
+      "telefone": "787878787"
+    },
+    {
+      "id": "4",
+      "nome": "Doris",
+      "telefone": "66666"
+    }
+  ],
+  "faq": [
+    {
+      "id": "1",
+      "pergunta": "O que é JSON Server?",
+      "resposta": "JSON server é uma ferramenta que permite...."
+    },
+    {
+      "id": "41",
+      "pergunta": "O que é Popeto?",
+      "resposta": "Popeto Popeto Popeto"
+    }
+  ]
 }
