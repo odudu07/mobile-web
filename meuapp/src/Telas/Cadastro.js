@@ -1,20 +1,31 @@
 import React, { useState } from 'react'
 import { Button, Text, TextInput, View, StyleSheet, Alert } from 'react-native'
 import axios from 'axios';
+import { useNavigation } from '@react-navigation/native';
 
 export default function Cadastro() {
   const [nome, setNome] = useState('');
   const [telefone, setTelefone] = useState('');
+  const navigation = useNavigation();
 
-  const enviarContato = async () => {
+ const enviarContato = async () => {
     if (!nome || !telefone) {
-        Alert.alert("Erro, por favor, preencha todos os campos");
-        return;
+      Alert.alert("Erro, Por favor, preencha todos os campos!");
+      return;
     }
     
-    const novoContato = {nome, telefone };
+    const novoContato = { nome, telefone };
 
-    axios.post(`http://localhost:3000/contatos`, novoContato)
+    axios.post('http://10.0.2.2:3000/contatos', novoContato)
+      .then(resposta => {
+        if (resposta.status === 201) {
+          setNome('');
+          setTelefone('');
+          navigation.navigate("ListaContatos");
+        } else {
+          Alert.alert("Erro, falha ao adicionar contato.");
+        }
+      });
   }
 
 
@@ -24,7 +35,7 @@ export default function Cadastro() {
       <TextInput
         style={estilos.input}
         value={nome}
-        onChange={setNome}
+        onChangeText={setNome}
         placeholder="Digite o nome"
       />
 
@@ -32,7 +43,7 @@ export default function Cadastro() {
       <TextInput 
         style={estilos.input}
         value={telefone}
-        onChange={setTelefone}
+        onChangeText={setTelefone}
         placeholder="Digite o telefone"
       />
 
