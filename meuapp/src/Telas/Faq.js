@@ -39,41 +39,44 @@ export default function Faq() {
 
 const styles = StyleSheet.create({
   container: {
+    flex: 1,
     padding: 20,
-    backgroundColor: '#f9f9f9',
+    backgroundColor: '#f2f6fc', // fundo azul clarinho suave
   },
   title: {
     fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#333',
+    fontWeight: '700',
+    marginBottom: 18,
+    color: '#1a1a1a', // texto escuro e legível
     textAlign: 'center',
   },
   card: {
-    backgroundColor: '#e3f2fd', // azul bem claro (você pode trocar)
-    borderRadius: 10,
-    padding: 15,
+    backgroundColor: '#fff', // card branco para contraste
+    borderRadius: 12,
+    padding: 16,
     marginBottom: 15,
-    elevation: 3,
+    borderWidth: 1,
+    borderColor: '#cce4f6', // leve contorno azul
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
+    shadowOpacity: 0.05,
+    shadowRadius: 3,
+    elevation: 2, // sombra leve no Android
   },
   question: {
     fontSize: 16,
-    fontWeight: 'bold',
-    color: '#1e88e5', // azul mais forte para a pergunta
-    marginBottom: 5,
+    fontWeight: '600',
+    color: '#1e88e5', // azul destacado para pergunta
+    marginBottom: 6,
   },
   answer: {
     fontSize: 15,
-    color: '#424242', // cinza escuro para resposta
-    lineHeight: 20,
+    color: '#222', // cinza escuro para resposta
+    lineHeight: 22,
   },
   noData: {
     fontSize: 16,
-    color: '#888',
+    color: '#777', // cinza suave
     textAlign: 'center',
     marginTop: 40,
   },

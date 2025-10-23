@@ -16,23 +16,26 @@ export default function Card(props) {
 }
 
 const estilos = StyleSheet.create({
-    container: {
-        backgroundColor: "#ffff",
-        borderRadius: 1.41,
-        shadowColor: 'blue',
-        shadowOpacity: 0.2,
-        elevation: 2,
-        padding: 20,
-        margin: 20
-    },
-    cardTitle: {
-        fontSize: 18,
-        fontWeight: "bold",
-        marginBottom: 10
-
-    },
-    cardContent: {
-        fontSize: 14,
-        marginBottom: 10
-    } 
+  container: {
+    backgroundColor: "#fff",
+    borderRadius: 8, 
+    shadowColor: "#000", 
+    shadowOpacity: 0.1,
+    shadowOffset:  2,
+    shadowRadius: 3,
+    elevation: 2,
+    padding: 20,
+    margin: 15,
+  },
+  cardTitle: {
+    fontSize: 18,
+    fontWeight: "bold",
+    marginBottom: 8,
+    color: "#333",
+  },
+  cardContent: {
+    fontSize: 14,
+    color: "#555",
+    marginBottom: 8,
+  },
 });

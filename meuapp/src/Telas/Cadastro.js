@@ -53,20 +53,31 @@ export default function Cadastro() {
 }
 
 const estilos = StyleSheet.create({
-    container: {
-        padding: 20
-    },
-    label: {
-        fontSize: 18,
-        marginBottom: 5,
-        fontWeight: "bold"
-    },
-    input: {
-        borderWidth: 1,
-        borderColor: "#ccc",
-        padding: 10,
-        marginBottom: 20,
-        borderRadius: 5,
-        backgroundColor: "#fff"
-    }
+  container: {
+    flex: 1,
+    padding: 20,
+    backgroundColor: "#f2f6fc", // fundo suave azul clarinho
+  },
+  label: {
+    fontSize: 18,
+    fontWeight: "600",
+    marginBottom: 8,
+    color: "#1a1a1a", // texto mais escuro e legível
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: "#cbd5e1", // cinza suave
+    backgroundColor: "#fff",
+    paddingVertical: 12,
+    paddingHorizontal: 14,
+    marginBottom: 16,
+    borderRadius: 8,
+    fontSize: 16,
+    color: "#222",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.05,
+    shadowRadius: 2,
+    elevation: 1, // sombra leve para Android
+  },
 });

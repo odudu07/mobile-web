@@ -1,14 +1,9 @@
 {
   "contatos": [
     {
-      "id": "1",
-      "nome": "João Silva",
-      "telefone": "787878787"
-    },
-    {
-      "id": "4a28",
-      "nome": "Tiago",
-      "telefone": "8989898"
+      "id": "9d7d",
+      "nome": "Eduardo",
+      "telefone": "11972534657"
     }
   ],
   "faq": [
@@ -21,6 +16,11 @@
       "id": "41",
       "pergunta": "O que é Popeto?",
       "resposta": "Popeto Popeto Popeto"
+    },
+    {
+      "id": "3",
+      "pergunta": "Onde fica Paris?",
+      "resposta": "Fica na Europa,França"
     }
   ]
 }

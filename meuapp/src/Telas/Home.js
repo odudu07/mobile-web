@@ -11,24 +11,24 @@ export default function Home() {
         <Card 
           title="Sobre"
           content="Saiba mais sobre nós e nossos serviços."
-          textButton="Ir para Sobre *"
+          textButton="Ir para Sobre "
           onPress={ () => navigation.navigate('Sobre') }
         />
         <Card
           title="Faq"
-          content="Saiba mais Faq"
+          content="Saiba mais Faq."
           textButton="Ir para Faq"
           onPress={ () => navigation.navigate('Faq') }
         />
         <Card
-          title="Lista Contatos"
-          content="Lista de contatos cadastrados"
+          title="Lista de Contatos"
+          content="Lista de contatos cadastrados."
           textButton="Ir para Lista"
           onPress={ () => navigation.navigate('ListaContatos') }
         />
         <Card
           title="Cadastro"
-          content="Cadastrar Lista"
+          content="Cadastrar Lista."
           textButton="Cadastro"
           onPress={ () => navigation.navigate('Cadastro') }
         />
