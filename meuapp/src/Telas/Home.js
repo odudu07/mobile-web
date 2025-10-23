@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, StyleSheet } from 'react-native'
 import { useNavigation } from '@react-navigation/native';
 import Card from "../Components/Card"
 
