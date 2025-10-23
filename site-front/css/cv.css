@@ -4,6 +4,6 @@ body {
 
 .container {
     max-width: 900px;
-    border: 2px solid orange;
+    border: 2px solid rgb(0, 55, 255);
     margin: 0 auto;
 }

@@ -8,6 +8,6 @@ function pularLinha() {
 
 // chamar função
 pularLinha();
-mostrarNome("Rodrigo ", 34);
+mostrarNome("Popeto ", 35);
 pularLinha();
 mostrarNome("Dudu ", 18);

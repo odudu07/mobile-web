@@ -1,80 +1,77 @@
+/* Reset básico */
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+/* Fundo da página */
 body {
-    background: #483D8B;
+    background: #a0c4ff; /* azul suave */
+    font-family: Arial, sans-serif;
 }
 
+/* Container centralizado */
 .container {
-    /*Largura*/
     width: 100%;
-    max-width:450px;
-    /*Borda*/
-    border: 2px solid white;
-    /* Borda arrendondada */
+    max-width: 450px;
+    border: 2px solid #000;
     border-radius: 5px;
-    /* Centralizar minha tela*/
     margin: 40px auto;
+    padding: 20px;
+    background-color: #dbe9ff; /* azul claro para contraste */
 }
 
+/* Formulário */
 .container form {
-    /*Flexbox*/
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.form-control input {
-    /*Espaçamento entre os elementos*/
-    margin-top: 15px;
-    margin-bottom: 15px;
-    /*Efeito colateral do navegador*/
-    outline: none;
-    /*Espaçamento dentro do elemento*/
-    padding: 5px;
-}
-
+/* Labels e inputs */
 .form-control label {
-    /* Espaçamento entre os elementos */
     margin-top: 15px;
-    color: #fff;
-    display: block;
+    color: #0c0c0c;
+    width: 100%;
 }
 
-#verifica-nota {
-    /* Cor do fundo */
-    background: #191970;
-    /* Borda do Botão */
-    border: 1px solid white;
-    /*Cor de texto */
-    color: #fff;
-    /*Espaçamento dentro do elemento */
+.form-control input {
+    margin: 10px 0;
     padding: 5px;
-    /* Espaçamento fora do elemento */
+    width: 100%;
+    outline: none;
+}
+
+/* Botão */
+#verifica-nota {
+    background: #191970;
+    color: #fff;
+    border: 1px solid white;
+    padding: 5px 10px;
     margin-bottom: 10px;
-    /* Cursor mãozinha */
     cursor: pointer;
-    transition: all 0.9s;
+    transition: all 0.3s;
 }
 
 #verifica-nota:hover {
-    background-color: rgb(232, 229, 229);
+    background: #e8e5e5;
     color: #191970;
 }
 
+/* Resultados */
 #result {
-    color: #fff;
+    color: #000;
     margin-bottom: 10px;
 }
 
+/* Mensagens de erro */
 #message {
     display: none;
 }
 
 #message span {
     color: red;
-    padding-bottom: 10px;
     display: block;
+    padding-bottom: 10px;
 }

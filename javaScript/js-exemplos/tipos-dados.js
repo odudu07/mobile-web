@@ -1,8 +1,8 @@
 // String
-let nome = "Giovanni";
+let nome = "Eduardo";
 
 // Inteiro
-let idade = 37;
+let idade = 18;
 
 // Booleano
 let casado = true;

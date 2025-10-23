@@ -1,4 +1,4 @@
-let text = "Estão chegando as provas";
+let text = "Esta chegando as provas";
 
 // Tamanho da string
 console.log(text.length);

@@ -1,6 +1,6 @@
-let nome = "Doris";
+let nome = "Eduardo";
 
 console.log(nome);
-console.log("Meu time é o Paulista");
-console.log("Eu tenho 37 anos");
+console.log("Meu time é o São Paulo");
+console.log("Eu tenho 18 anos");
 

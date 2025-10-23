@@ -1,8 +1,8 @@
 let mensagem = "Olá, mundo";
 
-const nomeCompleto = "Giovanni Ribeiro";
+const nomeCompleto = "Eduardo Rocha";
 
-let idade = 37;
+let idade = 18;
 
 // Resultado
 console.log(mensagem);
