@@ -1,81 +1,74 @@
-import { useEffect, useState  } from 'react'
-import { Alert, Button, ScrollView, StyleSheet, Text, View } from 'react-native'
+import { useEffect, useState } from 'react';
+import { Alert, ScrollView, StyleSheet, Text, View, TouchableOpacity } from 'react-native';
 import axios from 'axios';
+import { useNavigation } from '@react-navigation/native';
 
 export default function ListaContatos() {
   const [contatos, setContatos] = useState([]);
+  const navigation = useNavigation();
 
-  // Função para buscar contatos do servidor
   const listaContatos = () => {
     axios
       .get("http://10.0.2.2:3000/contatos")
-      .then((resposta) => {
-        setContatos(resposta.data)
-      })
-      .catch((error) => {
-        console.error("Erro ao buscar contatos", error);
-      });
-  }
+      .then(resposta => setContatos(resposta.data))
+      .catch(error => console.error("Erro ao buscar contatos:", error));
+  };
 
-  // Função para excluir um contato
   const deleteContato = (id) => {
     axios
-     .delete(`http://10.0.2.2:3000/contatos/${id}`)
-     .then(() => {
-      // Atualizar lista de contato
-      setContatos(contatos.filter((contato) => contato.id !== id));
-      Alert.alert("Sucesso", "Contato Exluido com sucesso");
-     })
-     .catch((error) => {
-      console.log("Erro excluir contato", error);
-      Alert.alert("Erro ao excluir");
-     });
-  }
+      .delete(`http://10.0.2.2:3000/contatos/${id}`)
+      .then(() => {
+        setContatos(contatos.filter(c => c.id !== id));
+        Alert.alert("Sucesso", "Contato excluído!");
+      })
+      .catch(() => Alert.alert("Erro ao excluir contato"));
+  };
 
-  // Use o useEffect para buscar dados
   useEffect(() => {
-    listaContatos()
-  }, [])
+    const unsubscribe = navigation.addListener('focus', listaContatos);
+    return unsubscribe;
+  }, [navigation]);
 
   return (
-    <View style={styles.container}>
-      <Text style={styles.title}>Lista de Contatos</Text>
+    <ScrollView contentContainerStyle={styles.container}>
+      {contatos.length > 0 ? (
+        contatos.map((contato, index) => (
+          <View key={index} style={styles.card}>
+            <Text style={styles.nome}>{contato.nome}</Text>
+            <Text style={styles.info}>Telefone: {contato.telefone}</Text>
+            <Text style={styles.info}>Email: {contato.email}</Text>
+            <Text style={styles.info}>Endereço: {contato.endereco}</Text>
+            <Text style={styles.info}>CPF: {contato.cpf}</Text>
 
-      <ScrollView contentContainerStyle={styles.listContainer}>
-        {contatos.length > 0 ? (
-          contatos.map((contato, index) => (
-            <View key={index} style={styles.card}>
-              <Text style={styles.nome}>{contato.nome}</Text>
-              <Text style={styles.telefone}>{contato.telefone}</Text>
-                <Button
-                  title="Excluir"
-                  onPress={() => deleteContato(contato.id)}
-                />
+            <View style={styles.buttonRow}>
+              <TouchableOpacity
+                style={[styles.button, styles.deleteButton]}
+                onPress={() => deleteContato(contato.id)}
+              >
+                <Text style={styles.buttonText}>Excluir</Text>
+              </TouchableOpacity>
+
+              <TouchableOpacity
+                style={[styles.button, styles.editButton]}
+                onPress={() => navigation.navigate("Cadastro", { contato })}
+              >
+                <Text style={styles.buttonText}>Alterar</Text>
+              </TouchableOpacity>
             </View>
-          ))
-        ) : (
-          <Text style={styles.emptyText}>Nenhum contato disponível</Text>
-        )}
-      </ScrollView>
-    </View>
+          </View>
+        ))
+      ) : (
+        <Text style={styles.emptyText}>Nenhum contato disponível</Text>
+      )}
+    </ScrollView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
-    backgroundColor: '#f2f6fc', // azul clarinho suave
     padding: 15,
-  },
-  title: {
-    fontSize: 24,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    color: '#1a1a1a',
-    textAlign: 'center',
-  },
-  listContainer: {
-    paddingBottom: 20,
+    backgroundColor: '#f2f6fc',
+    paddingBottom: 30,
   },
   card: {
     backgroundColor: '#fff',
@@ -92,11 +85,35 @@ const styles = StyleSheet.create({
     fontSize: 20,
     fontWeight: '600',
     color: '#222',
-    marginBottom: 4,
+    marginBottom: 6,
   },
-  telefone: {
+  info: {
     fontSize: 16,
     color: '#555',
+    marginBottom: 4,
+  },
+  buttonRow: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    marginTop: 10,
+    gap: 10,
+  },
+  button: {
+    flex: 1,
+    paddingVertical: 10,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+  deleteButton: {
+    backgroundColor: '#E53935',
+  },
+  editButton: {
+    backgroundColor: '#007AFF',
+  },
+  buttonText: {
+    color: '#fff',
+    fontWeight: 'bold',
+    fontSize: 16,
   },
   emptyText: {
     fontSize: 16,
